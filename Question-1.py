@@ -3,12 +3,12 @@
 print()
 num = int(input("Enter a number: "))
 i = num
-a=0
+string=''
 
 while num>0:
-    b=num%10
-    a=b+a*10
-    num=num//10
+    a=num%10
+    string=string+str(a)
+    num//=10
 
-print("Reverse of",i,"=",a)
+print("Reverse of",i,"=",string)
 print()

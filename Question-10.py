@@ -3,16 +3,12 @@
 print()
 num1 = int(input("Enter first number: "))
 num2 = int(input("Enter second number: "))
-if num1 > num2:
-    count = num1
-else:
-    count = num2
 m=num1
 n=num2    
 i=2
 a=1
 
-while i<=count:
+while i<=max(num1,num2):
     if num1 % i == 0 and num2 % i == 0:
         a = a * i
         num1 = num1//i
